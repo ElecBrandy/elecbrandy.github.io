@@ -1,4 +1,4 @@
-baseurl      = "localhost"
+baseurl      = "https://elecbrandy.github.io/"
 title        = "My Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
