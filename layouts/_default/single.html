@@ -1,52 +1,70 @@
 {{ define "main" }}
-    <main class="post">
-
-        <div class="post-info">
-            {{ if .IsTranslated }}
-                {{ i18n "postAvailable" }}
-                {{ range .Translations }}
-                    <a href="{{ .Permalink }}"><span class="flag flag-icon flag-icon-{{ index $.Site.Data.langFlags (.Lang) }} flag-icon-squared"></span></a>
-                {{ end}}
+  {{- $images := .Resources.ByType "image" }}
+  {{- $cover := $images.GetMatch (.Params.cover | default "*cover*") }}
+  {{- $feature := $images.GetMatch (.Params.feature | default "*feature*") | default $cover }}
+  <article>
+    <header class="max-w-prose">
+      {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
+        {{ partial "breadcrumbs.html" . }}
+      {{ end }}
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        {{ .Title | emojify }}
+      </h1>
+      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        {{ partial "article-meta.html" (dict "context" . "scope" "single") }}
+      </div>
+      {{ with $feature }}
+        <div class="prose">
+          <img
+            class="mb-6 -mt-4 rounded-md"
+            {{ if eq .MediaType.SubType "svg" }}
+              src="{{ .RelPermalink }}"
+            {{ else }}
+              {{ if lt .Width 660 }}
+                src="{{ .RelPermalink }}"
+              {{ else }}
+                srcset=" {{ (.Resize "330x").RelPermalink }} 330w,
+                {{ (.Resize "660x").RelPermalink }} 660w, {{ (.Resize "1024x").RelPermalink }}
+                1024w, {{ (.Resize "1320x").RelPermalink }} 2x"
+                src="{{ (.Resize "660x").RelPermalink }}"
+              {{ end }}
             {{ end }}
-            </p>
+            alt="{{ $.Params.featureAlt | default $.Params.coverAlt | default "" }}"
+          />
+          {{ with $.Params.coverCaption }}
+            <figcaption class="mb-6 -mt-3 text-center">{{ . | markdownify }}</figcaption>
+          {{ end }}
         </div>
-
-        <article>
-            <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
-
-            {{ if .Params.Cover }}
-                <figure class="post-cover">
-                    <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title }}" />
-                
-                    {{ if .Params.CoverCaption }}
-                        <figcaption class="center">{{ .Params.CoverCaption | markdownify }}</figcaption>
-                    {{ end }}
-                </figure>
-            {{ end }}
-            
-            {{ if .Params.toc }}
-                <hr />
-                <aside id="toc">
-                <div class="toc-title">{{ i18n "tableOfContents" }}</div>
-                    {{ .TableOfContents }}
-                </aside>
-                <hr />
-            {{ end }}
-
-            <div class="post-content">
-                {{ .Content }}
+      {{ end }}
+    </header>
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in .TableOfContents "<ul") }}
+        <div class="order-first px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+          <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+            {{ partial "toc.html" . }}
+          </div>
+        </div>
+      {{ end }}
+      <div class="min-w-0 min-h-0 max-w-prose grow">
+        {{ .Content | emojify }}
+      </div>
+    </section>
+    <footer class="pt-8 max-w-prose print:hidden">
+      {{ partial "author.html" . }}
+      {{ partial "sharing-links.html" . }}
+      {{ partial "article-pagination.html" . }}
+      {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
+        {{ if templates.Exists "partials/comments.html" }}
+          <div class="pt-3">
+            <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+            <div class="pt-3">
+              {{ partial "comments.html" . }}
             </div>
-        </article>
-
-        <hr />
-
-        <div class="post-info">
-            {{ partial "tags.html" .Params.tags }}
-            {{ partial "categories.html" . }}
-
-            {{- if .GitInfo }}
-			    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a> @ {{ if .Site.Params.dateformNum }}{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}{{ else }}{{ dateFormat "2006-01-02" .GitInfo.AuthorDate.Local }}{{ end }}</p>
-			{{- end }}
-  		</div>
-    </main>
+          </div>
+        {{ else }}
+          {{ warnf "[CONGO] Comments are enabled for %s but no comments partial exists." .File.Path }}
+        {{ end }}
+      {{ end }}
+    </footer>
+  </article>
 {{ end }}
