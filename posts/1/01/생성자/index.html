@@ -1,0 +1,227 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=author content="Elecbrandy "><meta name=description content="Initiallizer 생성자 매서드 중 클래스 안 저장 속성을 초기화하는 함수를 생성자 라고 부른다.
+클래스가 품고있는 속성들이 많아질 경우 사용시 일일히 초기화하기 어렵기 때문에 생성자를 사용한다.
+속성을 옵셔널로 선언하면 값이 없을경우 nil로 표현이 가능하므로 init을 사용할 필요가 없다.
+Self. 생성자가 파라미터로 받는 name과 price는 self.name를 초기화한다.
+생성자 내부의 self.name는 Cake 클래스를 이용해 만든 해당 객체의 var name에 담긴다.
+blueCake 선언 시 init은 파라미터로 전달받은 name: &amp;quot;블루케이크&amp;quot;로 self.name을 초기화한다. 이때 self.name은 곧 blueCake."><meta name=keywords content=",swift"><meta name=robots content="noodp"><meta name=theme-color content><link rel=canonical href=https://elecbrandy.github.io/posts/1/01/%EC%83%9D%EC%84%B1%EC%9E%90/><title>생성자 :: Elecbrandy — Hello Friend NG Theme</title><link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css><link rel=stylesheet href=https://elecbrandy.github.io/main.4e5c639214707eff609bb55fe49e183dee42258a73bc90e4cc7b0a84f900798a.css><link rel=apple-touch-icon sizes=180x180 href=https://elecbrandy.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://elecbrandy.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://elecbrandy.github.io/favicon-16x16.png><link rel=manifest href=https://elecbrandy.github.io/site.webmanifest><link rel=mask-icon href=https://elecbrandy.github.io/safari-pinned-tab.svg color><link rel="shortcut icon" href=https://elecbrandy.github.io/favicon.ico><meta name=msapplication-TileColor content><meta itemprop=name content="생성자"><meta itemprop=description content="Initiallizer 생성자 매서드 중 클래스 안 저장 속성을 초기화하는 함수를 생성자 라고 부른다.
+클래스가 품고있는 속성들이 많아질 경우 사용시 일일히 초기화하기 어렵기 때문에 생성자를 사용한다.
+속성을 옵셔널로 선언하면 값이 없을경우 nil로 표현이 가능하므로 init을 사용할 필요가 없다.
+Self. 생성자가 파라미터로 받는 name과 price는 self.name를 초기화한다.
+생성자 내부의 self.name는 Cake 클래스를 이용해 만든 해당 객체의 var name에 담긴다.
+blueCake 선언 시 init은 파라미터로 전달받은 name: &#34;블루케이크&#34;로 self.name을 초기화한다. 이때 self.name은 곧 blueCake."><meta itemprop=wordCount content="1424"><meta itemprop=image content="https://elecbrandy.github.io/"><meta itemprop=keywords content="swift,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://elecbrandy.github.io/"><meta name=twitter:title content="생성자"><meta name=twitter:description content="Initiallizer 생성자 매서드 중 클래스 안 저장 속성을 초기화하는 함수를 생성자 라고 부른다.
+클래스가 품고있는 속성들이 많아질 경우 사용시 일일히 초기화하기 어렵기 때문에 생성자를 사용한다.
+속성을 옵셔널로 선언하면 값이 없을경우 nil로 표현이 가능하므로 init을 사용할 필요가 없다.
+Self. 생성자가 파라미터로 받는 name과 price는 self.name를 초기화한다.
+생성자 내부의 self.name는 Cake 클래스를 이용해 만든 해당 객체의 var name에 담긴다.
+blueCake 선언 시 init은 파라미터로 전달받은 name: &#34;블루케이크&#34;로 self.name을 초기화한다. 이때 self.name은 곧 blueCake."><meta property="og:title" content="생성자"><meta property="og:description" content="Initiallizer 생성자 매서드 중 클래스 안 저장 속성을 초기화하는 함수를 생성자 라고 부른다.
+클래스가 품고있는 속성들이 많아질 경우 사용시 일일히 초기화하기 어렵기 때문에 생성자를 사용한다.
+속성을 옵셔널로 선언하면 값이 없을경우 nil로 표현이 가능하므로 init을 사용할 필요가 없다.
+Self. 생성자가 파라미터로 받는 name과 price는 self.name를 초기화한다.
+생성자 내부의 self.name는 Cake 클래스를 이용해 만든 해당 객체의 var name에 담긴다.
+blueCake 선언 시 init은 파라미터로 전달받은 name: &#34;블루케이크&#34;로 self.name을 초기화한다. 이때 self.name은 곧 blueCake."><meta property="og:type" content="article"><meta property="og:url" content="https://elecbrandy.github.io/posts/1/01/%EC%83%9D%EC%84%B1%EC%9E%90/"><meta property="og:image" content="https://elecbrandy.github.io/"><meta property="article:section" content="posts"></head><body><div class=container><header class=header><span class=header__inner><a href=https://elecbrandy.github.io/ style=text-decoration:none><div class=logo><span class=logo__mark>></span>
+<span class=logo__text>$ main</span>
+<span class=logo__cursor></span></div></a><span class=header__right><nav class=menu><ul class=menu__inner><li><a href=https://elecbrandy.github.io/about/>About</a></li><li><a href=https://elecbrandy.github.io/posts/>Posts</a></li><li><a href=https://elecbrandy.github.io/tags/>Tags</a></li></ul></nav><span class=menu-trigger><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span><span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41c10.4934.0 19-8.5066 19-19C41 11.5066 32.4934 3 22 3 11.5066 3 3 11.5066 3 22s8.5066 19 19 19zM7 22C7 13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22z"/></svg></span></span></span></header><div class=content><main class=post><div class=post-info><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7 minutes</p></div><article><h1 class=post-title><a href=https://elecbrandy.github.io/posts/1/01/%EC%83%9D%EC%84%B1%EC%9E%90/>생성자</a></h1><div class=post-content><h1 id=initiallizer-생성자>Initiallizer 생성자</h1><p>매서드 중 클래스 안 저장 속성을 초기화하는 함수를 <strong>생성자</strong> 라고 부른다.<br>클래스가 품고있는 속성들이 많아질 경우 사용시 일일히 초기화하기 어렵기 때문에 생성자를 사용한다.<br>속성을 옵셔널로 선언하면 값이 없을경우 nil로 표현이 가능하므로 init을 사용할 필요가 없다.</p><h3 id=self>Self.</h3><p>생성자가 파라미터로 받는 name과 price는 <code>self.name</code>를 초기화한다.<br>생성자 내부의 <code>self.name</code>는 Cake 클래스를 이용해 만든 해당 객체의 <code>var name</code>에 담긴다.<br>blueCake 선언 시 init은 파라미터로 전달받은 <code>name: "블루케이크"</code>로 <code>self.name</code>을 초기화한다. 이때 <code>self.name</code>은 곧 <code>blueCake.name</code>이다.</p><h3 id=overloading>Overloading</h3><p>Overloading을 지원하므로, 클래스 안에 생성자를 맘대로맘대로 열매 먹은 것 마냥 생성할 수 있다. 장점은 개발자가 인스턴스를 만들 때 선택의 폭이 넓어진다는점?</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Cake</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> name: String
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//var name: String?</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> subname: String
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 여러 저장 속성에 한가지 입력값을 넣을 수도 있고</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>(name: String) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.name = name
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.subname = name
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 한번에 다 받을 수도 있다.</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>(name: String, subname: String, price: Double) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.name = name
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.subname = subname
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.price = price
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=init-자동-구현>init() 자동 구현</h3><p>저장 속성의 기본값을 설정한 경우 스위프트에서 자동으로 <code>init</code>(생성자)를 구현해준다.<br>클래스로 인스턴스를 생성하는 <code>var buleCake = Cake()</code>는 사실 <code>var blueCake = Cake.init()</code>의 축약형임.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Cake</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> name: String = <span style=color:#e6db74>&#34;블루케이크&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> subname: String = <span style=color:#e6db74>&#34;블루베리케이크&#34;</span> 
+</span></span><span style=display:flex><span><span style=color:#75715e>//  여기 숨어있지롱  </span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//  init() {</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//        </span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//  }</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> buleCake = Cake()
+</span></span></code></pre></div><h3 id=delegate-up-down>Delegate up, down</h3><ol><li>Delegate up : 서브클래스의 지정생성자는 슈퍼클래스의 지정생성자를 반드시 호출해야함.</li><li>Delegate across : 편의 생성자는 동일한 클래스에서 다른 편의생성자 또는 지정생성자를 호출해야함.</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>A</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> a: Int
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> b: Int
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>(a: Int, b: Int) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.a = a
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.b = b
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>convenience</span> <span style=color:#66d9ef>init</span>() {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.<span style=color:#66d9ef>init</span>(a: <span style=color:#ae81ff>0</span>, b: <span style=color:#ae81ff>0</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>B</span>: A {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> c: Int
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>(a: Int, b: Int, c: Int) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.c = c
+</span></span><span style=display:flex><span>        <span style=color:#75715e>//self.a = a 또는 self.b = b 처럼</span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>//이때 여기서 A의 저장속성에 접근하는 것은 불가능하다.</span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>//왜냐? 아직 상위 클래스 A의 생성자를 호출하지 않아서</span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>//해당 메모리 셋팅이 되기 전이기 때문이다.</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>super</span>.<span style=color:#66d9ef>init</span>(a: a, b: b) <span style=color:#75715e>// 상위 지정 생성자 호출</span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>//이 밑으로는 이제 A의 저장 속성에 접근이 가능하다.</span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>//self.a = 0 등</span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>//메서드도 운용 가능함</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h1 id=클래스-생성자-class-initiallizer>클래스 생성자 Class Initiallizer</h1><p>클래스로 인스턴스를 만드는 경우 힙 영역에 비어있는 공간을 스캔해야하므로 구조체에 비해서 시간이 더 오래걸림.(동적할당). 구조체는 메모리를 찾지 않고 그냥 스택에다가 쌓음.</p><h2 id=1-지정-생성자-designated-initiallizer>1. 지정 생성자 Designated Initiallizer</h2><p>지정 생성자는 모든 속성을 초기화 해야함!!<br>일반적인 생성자를 지정 생성자라고 부르며, 그 범주 안에는 기본 생성자 <code>init()</code>도 포함되어있음</p><h2 id=2-편의-생성자-convenience-initiallizer>2. 편의 생성자 Convenience Initiallizer</h2><p>편의 생성자는 모든 속성을 초기화 할 필요가 없고, 상속되지 않으며 서브클래스에서 재정의 불가함!!!<br>지정 생성자를 베이스로 만들어낸 바리에이션 으로 (편의)생성자 내에서 지정 생성자를 호출하는 것이 특징!<br>코드 중복을 없애 유지보수가 쉬워지며 특히 상속을 지원하는 클래스에선 저장 속성이 많아 실수가 나올 수 있는데 이를 방지해줌.<br>생성자 중복을 없애고 편의 생성자를 통해 지정 생성자를 호출해야한다!</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Cake</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>let</span> name, subname: String
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//편의 생성자</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>convenience</span> <span style=color:#66d9ef>init</span>() {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.<span style=color:#66d9ef>init</span>(name: <span style=color:#e6db74>&#34;블루케이크&#34;</span>, subname: <span style=color:#e6db74>&#34;블루베리케이크&#34;</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//편의 생성자</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>convenience</span> <span style=color:#66d9ef>init</span>(name: String) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.<span style=color:#66d9ef>init</span>(name: name, subname: name)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//지정 생성자</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>(name: String, subname: String) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.name = name
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.subname = subname
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=3-필수-생성자-requried-initiallizer>3. 필수 생성자 Requried Initiallizer</h2><p>상위 클래스에 필수 생성자가 존재한다면, 하위 클래스에서 반드시 해당 생성자를 구현해야함!
+단, 딱히 다른 지정생성자를 구현하지 않으면 자동으로 상속된다는거!
+주로 애플이 미리 만들어놓은 프레임워크에 쓰인다는 점 유의합시당&mldr;</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>struct</span> <span style=color:#a6e22e>Cake</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> price: Int
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>required</span> <span style=color:#66d9ef>init</span>(price: Int) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.x = x
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><blockquote><p>UIView로 보는 필수 생성자
+구현을 하지 않는다면 아래처럼 자동으로 상속된다! 해당 생성자는 UIView가 가지고 있는 init이겠죠?</p></blockquote><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>AView</span>: UIview {
+</span></span><span style=display:flex><span><span style=color:#75715e>//    required init?(coder: NSCoder) {</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//        fatalError(&#34;init(coder:) has not been implemented&#34;)</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//    }</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>그렇지만 아래처럼 하위 클래스인 AView에서 생성자 구현(재정의)이 발생한다면, 직접 써줘야하겠죠?</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>AView</span>: UIview {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>init</span>(frame: CGRect) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>super</span>.<span style=color:#66d9ef>init</span>(frame: frame)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//써줘야하겠죠?</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>required</span> <span style=color:#66d9ef>init</span>?(coder: NSCoder) {
+</span></span><span style=display:flex><span>        fatalError(<span style=color:#e6db74>&#34;init(coder:) has not been implemented&#34;</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=4-실패가능-생성자-requried-initiallizer>4. 실패가능 생성자 Requried Initiallizer</h2><p>인스턴스 생성에 실패해서 아에 삑나는 상황보다는, 실패할 수도 있는 가능성을 열어둔 생성자로 구조체/클래스/열거형 등에서 사용 가능함. 실패가능 생성자를 정의하고 그에 따른 예외처리를 하는 것이 더 올바른 방법!
+init 뒤에 ?를 붙여서 사용하며, 내부에 if문을 사용해서 실패할 경우 nil을 반환하는 방법
+같은 이름으로 override 불가능!</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>A</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> a: Int
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>?(a: Int) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> a.isEmpty {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>nil</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.a = <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> a = A(a: <span style=color:#e6db74>&#34;James&#34;</span>) <span style=color:#75715e>//옵셔널</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> a = A(a: <span style=color:#e6db74>&#34;&#34;</span>) <span style=color:#75715e>//nil</span>
+</span></span></code></pre></div><h3 id=실패가능-생성자-조건정리>실패가능 생성자 조건정리</h3><p>실패가 불가능한 생성자는 다른 실패가능 생성자를 호출할 수 없다.</p><ul><li>Delegate across<ul><li>실패가능 -(호출)-> 실패불가능</li><li>실패불가능 -(호출)-> 실패가능
+<img src=./image/002_%E1%84%89%E1%85%B5%E1%86%AF%E1%84%91%E1%85%A2%E1%84%80%E1%85%A1%E1%84%82%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8C%E1%85%A11.png alt=002_실패가능생성자1.png></li></ul></li><li>그 이유는, 실패 가능 범위가 실패 불가 범위보다 포괄적인 개념이기 때문이다. 아래 벤다이어그램에 따라 범위가 큰 곳에서 작은 곳으로 가는 2번은 가능하지만, 작은 곳에서 큰 곳으로 가는 1번은 불가능하다.
+<img src=./image/002_%E1%84%89%E1%85%B5%E1%86%AF%E1%84%91%E1%85%A2%E1%84%80%E1%85%A1%E1%84%82%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8C%E1%85%A12.png alt=002_실패가능생성자2.png title=002_실패가능생성자2.png></li></ul><h2 id=5-소멸자>5. 소멸자</h2><p>인스턴스가 메모리에서 해제되기 직전에 정리가 필요한 내용을 구현하는 메서드.
+클래스 당 최대 1개의 소멸자를 정의할 수 있으며, 소멸자는 따로 파라미터를 사용하지 않음.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>A</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> a: Int
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>deinit</span> {
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> AAA: A? = A()
+</span></span><span style=display:flex><span>A = <span style=color:#66d9ef>nil</span> <span style=color:#75715e>//A인스턴스 제거... 그리고 deinit</span>
+</span></span></code></pre></div><h2 id=생성자의-상속과-재정의>생성자의 상속과 재정의</h2><p>생성자 상속… 넘모 어렵고 헷갈리지만 우선 규칙에 겁을 먹지말고 차근차근 정리해보자…
+위에서 배운 Delegate up,down도 생각하면서 민첩하게 행동하자&mldr;</p><h3 id=1-상위-클래스의-생성자를-고려하자>1. 상위 클래스의 생성자를 고려하자!</h3><p><strong>상위 클래스의 지정생성자를 상속할 경우</strong></p><ul><li>하위클래스에서 지정 생성자로도 구현할 수 있다! (재정의)</li><li>하위클래스에서 편의 생성자로도 구현할 수 있다! (재정의)</li><li>반드시 구현할 필요는 없다&mldr;!
+<strong>상위 클래스의 편의 생성자를 상속할 경우</strong></li><li>호출불가가 원칙이므로 재정의 필요없음! 만약 동일한 이름이 구현되어있다면 그냥 새로 정의한거겠죠?</li></ul><h3 id=2-현재-클래스의-생성자를-구현하자>2. 현재 클래스의 생성자를 구현하자!</h3><p><strong>지정 생성자 안에서는&mldr;</strong></p><ul><li>나의 모든 저장 속성을 초기화 해야함!</li><li>슈퍼 클래스의 지정 생성자 호출.. 해야겠지? Delegate up, across 유의
+<strong>편의 생성자 안에서는</strong></li><li>현재 클래스의 지정 생성자 호출 해야함!</li></ul><blockquote><p>도식 그래프로 정리해봄
+<img src=./image/001.png alt=001.png></p></blockquote><h3 id=실습>실습</h3><p>클래스 A를 상위 클래스로 삼는 &lt;클래스 B>를 만들어보자.
+위 도식에 따라 여러가지 경우에 따라 다양한 모습의 생성자가 보여질지도?
+추가적으로, 클래스 A는 생성자가 없어보이지만 사실 자동으로 제공되는 init 기본형을 가지고 있다는 사실을 기억하자구.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>A</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> a: Int = <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// init() {} 기본 생성자 자동 제공!</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><blockquote><p><strong>[Case1]</strong> 하위 클래스에서 <strong>지정생성자</strong>로 구현(재정의)해보자!</p></blockquote><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>B</span>: A {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> c: Int
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>init</span>() {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.c = <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>super</span>.<span style=color:#66d9ef>init</span>() <span style=color:#75715e>//Delegate up</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><blockquote><p><strong>[Case2]</strong> 하위 클래스에서 <strong>편의생성자</strong>로 구현(재정의)해보자!</p></blockquote><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>B</span>: A {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> c: Int
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>convenience</span> <span style=color:#66d9ef>init</span>() {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.<span style=color:#66d9ef>init</span>(c:<span style=color:#ae81ff>0</span>) <span style=color:#75715e>//Delegate acorss</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>(c: Int) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.c = c
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>super</span>.<span style=color:#66d9ef>init</span>() <span style=color:#75715e>//Delegate up</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><blockquote><p><strong>[Case3]</strong> B클래스를 상속한 C클래스가 있다면 어떨까?
+Case2 경우의 B클래스를 상속해보자~! B클래스를 보니 지정생성자가 <code>init()</code>, <code>init(c :Int</code> 이렇게 두가지가 있다. c를 파라미터로 받는 것 하나, 그냥 하나. 이것들을 어떻게 상속할지 고민해보자. 지정? 편의? 아니면 상속 포기?</p></blockquote><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>C</span>: B {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> z: Int
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 1. init()을 구현하자(재정의)</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>init</span>() {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.z = <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.<span style=color:#66d9ef>init</span>() <span style=color:#75715e>//Delegate acorss</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 2. init(y: int)을 구현하자(재정의)</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>init</span>(y: Int) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.z = <span style=color:#ae81ff>0</span> <span style=color:#75715e>//지정생성자의 조건. 모든 속성을 초기화해야하므로 z도 초기화</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>super</span>.<span style=color:#66d9ef>init</span>(y : y)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 3. 요건 현재 클래스의 생성자를 구현하는 과정...</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>(z: Int) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.z = z 
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>super</span>.<span style=color:#66d9ef>init</span>() <span style=color:#75715e>//Delegate up</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=생성자-상속-규칙-정리>생성자 상속 규칙 정리</h3><ol><li>상위 클래스의 지정/편의 생성자를 현재 클래스(하위)에서 어떻게 구현할 것인가?<ul><li>지정생성자<ul><li>하위 클래스에서 지정 생성자로 구현한다</li><li>하위 클래스에서 편의 생성자로 구현한다</li><li>구현 안 할 수도 있음!</li></ul></li><li>편의 생성자<ul><li>재정의 하지않아도 되고, 동일이름이라면 그냥 새로 정의한 것임</li></ul></li></ul></li><li>상위 관련 생성자를 구현했다면, 이제 현재 클래스의 생성자를 만들어야한다.<ul><li>지정생성자로 만들기<ul><li>현재 나의 모든 저장속성을 초기화</li><li>상위 클래스(슈퍼)의 지정 생성자를 호출하기</li></ul></li><li>편의 생성자<ul><li>현재 클래스(동일)의 지정 생성자를 호출해야함…</li></ul></li></ul></li></ol><blockquote><p>!!주의!! 예외사항</p></blockquote><ol><li>지정 생성자 자동상속 - 저장속성의 기본값이 세팅되어있고 어떤 재정의도 안했을때</li><li>편의 생성자 자동상속 - 상위지정생성자를 모두 상속하는 경우<ul><li>위 지정생성자 모두를 자동상속하거나, 상위 지정생성자 모두 재정의하는 경우</li></ul></li></ol><h3 id=생성자-상속>생성자 상속</h3><ul><li>하위 클래스는 기본적으로 상위 클래스 생성자를 상속하지 않고 재정의하는 것이 원칙</li><li>재정의는 즉 동일한 이름을 가진 생성자를 구현하는 것이고, 하위클래스의 커스텀 생성자 구현 전에 (상위클래스의) 재정의생성자를 작성해야 실수하지 않음.</li><li>상위 지정 생성자가 존재할 경우<ul><li>하위클래스에서 지정 생성자로 구현할 수도 있고 (재정의)</li><li>하위클래스에서 편의 생성자로 구현할 수도 있고 (재정의)</li><li>구현을 하지 않을 수도 있다. (재정의가 필수적인 것은 아님)</li></ul></li><li>상위 편의 생성자가 존재할 경우<ul><li>재정의를 하지 않아도 되고, (호출불가가 원칙이라 재정의 제공 X)</li><li>만약 동일한 이름을 구현했다면 그냥 새로 정의한 것임!</li></ul></li></ul><h2 id=구조체-생성자>구조체 생성자</h2><p>구조체는 지정 생성자와 실패가능 생성자를 가질 수 있음.</p><h3 id=1-구조체-지정-생성자>1. 구조체 지정 생성자</h3><p>다른 생성자를 호출하는 생성자를 선언하는 방식도 가능하다. 이 경우는 클래스에서 편의 생성자에 해당한다. 물론 구조체는 클래스와 달리 편의 생성자라는 개념이 없으니 그냥 지정 생성자임.
+장점은 코드 중복을 방지. 전체적인 생성자를 하나 만들고, 다른 생성자에서 해당 생성자를 가져오는 그런 방법.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>struct</span> <span style=color:#a6e22e>Cake</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>let</span> name, subname: String
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>() {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.<span style=color:#66d9ef>init</span>(name: <span style=color:#e6db74>&#34;블루케이크&#34;</span>, subname: <span style=color:#e6db74>&#34;블루베리케이크&#34;</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>(name: String) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.<span style=color:#66d9ef>init</span>(name: name, subname: name)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>(name: String, subname: String, price: Double) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.name = name
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.subname = subname
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.price = price
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> buleCake = Cake()
+</span></span></code></pre></div><h3 id=memberwise-initializer>Memberwise Initializer</h3><p>구조체의 경우 맴버와이즈 이니셜라이저를 제공해줌. 생성자를 딱히 적지 않아도 xcode에서 알아서 구현해준다. 생성자를 당신이 새로 만들면 더 이상 안해줌&mldr;
+이런 이유? 클래스보다 구조체를 더 많이 쓰니까 허들을 낮춰준게 아닐까?</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>struct</span> <span style=color:#a6e22e>Cake</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> name: String
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> price: Double
+</span></span><span style=display:flex><span><span style=color:#75715e>//    여기 숨어있지롱 Xcode가 구현해주지롱.. 물론 당신이 새로 init을 생성하면 the end</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//   init(name: String, subname: String, price: Double) {</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//      self.name = name</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//        self.subname = subname</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//        self.price = price</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//   }</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#75715e>//var blueCake = Cake(name: String, price: Double)</span>
+</span></span></code></pre></div></div></article><hr><div class=post-info><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg><span class=tag><a href=https://elecbrandy.github.io/tags/swift/>swift</a></span></p><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>1424 Words</p><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>0001-01-01 00:00</p></div><div class=pagination><div class=pagination__buttons><span class="button next"><a href=https://elecbrandy.github.io/posts/1/01/%EC%97%AC%EB%9F%AC%EA%B0%80%EC%A7%80-%EC%86%8D%EC%84%B1/><span class=button__text>여러가지 속성</span>
+<span class=button__icon>→</span></a></span></div></div></main></div><footer class=footer><div class=footer__inner><div class=footer__content><span>&copy; 2023</span>
+<span><a href=https://elecbrandy.github.io/>Elecbrandy</a></span>
+<span><a href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank rel=noopener>CC BY-NC 4.0</a></span>
+<span><a href=https://elecbrandy.github.io/posts/index.xml target=_blank title=rss><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></span></div></div><div class=footer__inner><div class=footer__content><span>Powered by <a href=http://gohugo.io>Hugo</a></span></div></div></footer></div><script type=text/javascript src=https://elecbrandy.github.io/bundle.min.c90b8161416b87c69a8e02683b54ddd6edb90aea699648bf655e6cbc45b419b8e465d196e715772463dba35a6faf5decb2eb247480d38680484d54645b434570.js integrity="sha512-yQuBYUFrh8aajgJoO1Td1u25Cupplki/ZV5svEW0GbjkZdGW5xV3JGPbo1pvr13ssuskdIDThoBITVRkW0NFcA=="></script></body></html>

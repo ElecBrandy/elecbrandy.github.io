@@ -1,0 +1,136 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=author content="Elecbrandy "><meta name=description content="Property 1. 저장 속성 메모리 공간을 가지고 값을 저장할 수 있는 속성. Class Cake의 저장속성은 var name, var price !
+class Cake { var name: String lazy var price: Double = 0.1 init (a:String) { name = a } } 2. 지연 저장 속성(Lazy Stored Properties) 속성의 초기화를 지연시키는 것으로, 해당 속성은 제외한 상태로 진행하다가 후에 접근 시 초기화하는 것임. 나중에 변화가 생기는 것이므로 var 로 선언해야며 미리 초기화 해두어야하는 것이 포인트!"><meta name=keywords content=",swift"><meta name=robots content="noodp"><meta name=theme-color content><link rel=canonical href=https://elecbrandy.github.io/posts/1/01/%EC%97%AC%EB%9F%AC%EA%B0%80%EC%A7%80-%EC%86%8D%EC%84%B1/><title>여러가지 속성 :: Elecbrandy — Hello Friend NG Theme</title><link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css><link rel=stylesheet href=https://elecbrandy.github.io/main.4e5c639214707eff609bb55fe49e183dee42258a73bc90e4cc7b0a84f900798a.css><link rel=apple-touch-icon sizes=180x180 href=https://elecbrandy.github.io/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://elecbrandy.github.io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://elecbrandy.github.io/favicon-16x16.png><link rel=manifest href=https://elecbrandy.github.io/site.webmanifest><link rel=mask-icon href=https://elecbrandy.github.io/safari-pinned-tab.svg color><link rel="shortcut icon" href=https://elecbrandy.github.io/favicon.ico><meta name=msapplication-TileColor content><meta itemprop=name content="여러가지 속성"><meta itemprop=description content="Property 1. 저장 속성 메모리 공간을 가지고 값을 저장할 수 있는 속성. Class Cake의 저장속성은 var name, var price !
+class Cake { var name: String lazy var price: Double = 0.1 init (a:String) { name = a } } 2. 지연 저장 속성(Lazy Stored Properties) 속성의 초기화를 지연시키는 것으로, 해당 속성은 제외한 상태로 진행하다가 후에 접근 시 초기화하는 것임. 나중에 변화가 생기는 것이므로 var 로 선언해야며 미리 초기화 해두어야하는 것이 포인트!"><meta itemprop=wordCount content="649"><meta itemprop=image content="https://elecbrandy.github.io/"><meta itemprop=keywords content="swift,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://elecbrandy.github.io/"><meta name=twitter:title content="여러가지 속성"><meta name=twitter:description content="Property 1. 저장 속성 메모리 공간을 가지고 값을 저장할 수 있는 속성. Class Cake의 저장속성은 var name, var price !
+class Cake { var name: String lazy var price: Double = 0.1 init (a:String) { name = a } } 2. 지연 저장 속성(Lazy Stored Properties) 속성의 초기화를 지연시키는 것으로, 해당 속성은 제외한 상태로 진행하다가 후에 접근 시 초기화하는 것임. 나중에 변화가 생기는 것이므로 var 로 선언해야며 미리 초기화 해두어야하는 것이 포인트!"><meta property="og:title" content="여러가지 속성"><meta property="og:description" content="Property 1. 저장 속성 메모리 공간을 가지고 값을 저장할 수 있는 속성. Class Cake의 저장속성은 var name, var price !
+class Cake { var name: String lazy var price: Double = 0.1 init (a:String) { name = a } } 2. 지연 저장 속성(Lazy Stored Properties) 속성의 초기화를 지연시키는 것으로, 해당 속성은 제외한 상태로 진행하다가 후에 접근 시 초기화하는 것임. 나중에 변화가 생기는 것이므로 var 로 선언해야며 미리 초기화 해두어야하는 것이 포인트!"><meta property="og:type" content="article"><meta property="og:url" content="https://elecbrandy.github.io/posts/1/01/%EC%97%AC%EB%9F%AC%EA%B0%80%EC%A7%80-%EC%86%8D%EC%84%B1/"><meta property="og:image" content="https://elecbrandy.github.io/"><meta property="article:section" content="posts"></head><body><div class=container><header class=header><span class=header__inner><a href=https://elecbrandy.github.io/ style=text-decoration:none><div class=logo><span class=logo__mark>></span>
+<span class=logo__text>$ main</span>
+<span class=logo__cursor></span></div></a><span class=header__right><nav class=menu><ul class=menu__inner><li><a href=https://elecbrandy.github.io/about/>About</a></li><li><a href=https://elecbrandy.github.io/posts/>Posts</a></li><li><a href=https://elecbrandy.github.io/tags/>Tags</a></li></ul></nav><span class=menu-trigger><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span><span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41c10.4934.0 19-8.5066 19-19C41 11.5066 32.4934 3 22 3 11.5066 3 3 11.5066 3 22s8.5066 19 19 19zM7 22C7 13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22z"/></svg></span></span></span></header><div class=content><main class=post><div class=post-info><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>4 minutes</p></div><article><h1 class=post-title><a href=https://elecbrandy.github.io/posts/1/01/%EC%97%AC%EB%9F%AC%EA%B0%80%EC%A7%80-%EC%86%8D%EC%84%B1/>여러가지 속성</a></h1><div class=post-content><h1 id=property>Property</h1><h2 id=1-저장-속성>1. 저장 속성</h2><p>메모리 공간을 가지고 값을 저장할 수 있는 속성.
+Class Cake의 저장속성은 <code>var name</code>, <code>var price</code> !</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Cake</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> name: String
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>lazy</span> <span style=color:#66d9ef>var</span> price: Double = <span style=color:#ae81ff>0.1</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span> (a:String) {
+</span></span><span style=display:flex><span>        name = a
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=2-지연-저장-속성lazy-stored-properties>2. 지연 저장 속성(Lazy Stored Properties)</h2><p>속성의 초기화를 지연시키는 것으로, 해당 속성은 제외한 상태로 진행하다가 후에 접근 시 초기화하는 것임. 나중에 변화가 생기는 것이므로 <code>var</code> 로 선언해야며 미리 초기화 해두어야하는 것이 포인트! 지연 저장 속성 운용 시 생성자 안에서는 따로 값 설정을 해주지 않아야 함. 메모리 관리와 다른 속성을 이용(의존)해야하는 경우 사용한다!</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>lazy</span> <span style=color:#66d9ef>var</span> price: Double = <span style=color:#ae81ff>0.1</span>
+</span></span></code></pre></div><h2 id=3-계산-속성>3. 계산 속성</h2><p>계산속성은 실질적으로 함수이며 get 속성과 set 속성으로 나누어진다.
+두가지 매서드를 한번에 구현할 수 있으며, 결국 속성의 탈을 쓴 매서드임!
+addScore는 score에 의존한다.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>score</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> score: Int = <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> addScore: Int {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>get</span> {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> score <span style=color:#f92672>+</span> <span style=color:#ae81ff>100</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>set</span>(newValue) {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>self</span>.score = score <span style=color:#f92672>+</span> newValue
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> peter = scoreCal()
+</span></span><span style=display:flex><span>peter.score = <span style=color:#ae81ff>100</span>
+</span></span><span style=display:flex><span>peter.addScore <span style=color:#75715e>//200</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>peter.addScore = <span style=color:#ae81ff>500</span>
+</span></span><span style=display:flex><span>peter.score <span style=color:#75715e>//600</span>
+</span></span></code></pre></div><h3 id=get>get</h3><p>get은 값을 얻는 것.
+<code>peter.score</code> 실행 시 내부의 get으로 들어가 <code>score + 100</code> 값을 리턴한다.
+set과 함께 쓰이지 않을 경우 get 블록으로 감싸지 않아도 괜찮다!</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>score</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> score: Int = <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> addScore: Int {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> score <span style=color:#f92672>+</span> <span style=color:#ae81ff>100</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=set>set</h3><p>set은 값을 세팅하는 것.
+get이 정해진 과정을 수행한다면 set은 사용자가 외부에서 값을 세팅하는 과정을 수행하며
+<code>peter.addScore=500</code>의 의미는 <code>peter.score = score + 500</code> 을 의미한다.
+파라미터는 <code>newVaule</code>로 사용하기로 애플과의 약속이다 :) 또한 생략도 가능하다.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>score</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> score: Int = <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> addScore: Int {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>get</span> {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> score <span style=color:#f92672>+</span> <span style=color:#ae81ff>100</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>set</span> {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>self</span>.score = score <span style=color:#f92672>+</span> newValue
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=4-타입-속성>4. 타입 속성</h2><p>모든 인스턴스가 공통적으로 가져야하는 속성의 경우 사용한다.
+클래스, 구조체 등에 모두 사용가능하며, 접근 시 인스턴스가 아닌 클래스 원본에 접근해야 알아낼 수 있다. 따로 Student()를 사용해 인스턴스 생성을 하지 않아도 접근할 수 있다!
+init(생성자)을 통해 따로 초기화하는 과정이 없으므로 선언시 무조건 초기값을 지정해주어야한다.</p><h3 id=저장-타입-속성>저장 타입 속성</h3><p>활용 방법에 있어서는 <code>static var count: Int = 0</code>으로 타입속성을 초기화하고, init 구문 안에 <code>Student.count += 1</code>을 통해서 Student로 만들어진 인스턴스의 총 갯수를 샐 수 있다.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Student</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>let</span> standing: String = <span style=color:#e6db74>&#34;학생&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>var</span> count: Int = <span style=color:#ae81ff>0</span> <span style=color:#75715e>//인스턴스를 몇개 찍어냈는지 확인</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> name: String
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>(name:String, score: Int) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.name = name
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.score = score
+</span></span><span style=display:flex><span>        Student.count <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span> <span style=color:#75715e>// 타입 속성의 활용</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> student = Student(name: <span style=color:#e6db74>&#34;길동&#34;</span>, score: <span style=color:#ae81ff>60</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>student.name <span style=color:#75715e>//길동</span>
+</span></span><span style=display:flex><span>student.score <span style=color:#75715e>//60</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//타입속성 접근 시 (static에 접근 시)</span>
+</span></span><span style=display:flex><span>Student.standing
+</span></span><span style=display:flex><span><span style=color:#75715e>//student.standing 은 에러 발생</span>
+</span></span></code></pre></div><h3 id=계산-타입-속성>계산 타입 속성</h3><p>계산 타입 속성의 경우 static 사용시 상속에서 재정의가 불가능하지만, class 사용시 재정의가 가능하다.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Student</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>let</span> standing: String = <span style=color:#e6db74>&#34;학생&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>let</span> score: Int = <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//계산 타입 속성 예시</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>var</span> plusScore: Int {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> score <span style=color:#f92672>+</span> <span style=color:#ae81ff>100</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//상속 재정의가 가능</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>var</span> pulsScore2: Int {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> score <span style=color:#f92672>+</span><span style=color:#ae81ff>100</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=5-속성-감시자>5. 속성 감시자</h2><p>저장 속성과 속성의 변화를 감시하는 매서드이며, 저장 속성이 변경되면 호출된다.
+계산 속성에도 사용 가능하나, 상속해서 재정의하는 경우에만 가능하다. 사실 계산 속성의 경우 set 블록에서 속성의 변화를 감지할 수 있으므로… 속성감시자는 저장 속성에 자주 쓰인다고만 알아두자.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Student</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> name: String = <span style=color:#e6db74>&#34;이름&#34;</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//저장속성과 해당 속성이 변하는 시점을 관찰하는 매서드</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> status: String = <span style=color:#e6db74>&#34;재학생&#34;</span> {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>willSet</span>(newValue) {
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;</span><span style=color:#e6db74>\(</span>name<span style=color:#e6db74>)</span><span style=color:#e6db74> 학생 : </span><span style=color:#e6db74>\(</span>status<span style=color:#e6db74>)</span><span style=color:#e6db74>에서 </span><span style=color:#e6db74>\(</span>newValue<span style=color:#e6db74>)</span><span style=color:#e6db74>로 변경 예정&#34;</span>)
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>didSet</span>(oldValue) {
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;</span><span style=color:#e6db74>\(</span>name<span style=color:#e6db74>)</span><span style=color:#e6db74> 학생 : </span><span style=color:#e6db74>\(</span>oldValue<span style=color:#e6db74>)</span><span style=color:#e6db74>에서 </span><span style=color:#e6db74>\(</span>status<span style=color:#e6db74>)</span><span style=color:#e6db74>로 변경 완료&#34;</span>)
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>init</span>(name: String) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>self</span>.name = name
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> std01 = Student(name: <span style=color:#e6db74>&#34;길동&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>std01.status = <span style=color:#e6db74>&#34;졸업생&#34;</span> 
+</span></span><span style=display:flex><span><span style=color:#75715e>// 길동 학생 : 재학생에서 졸업생으로 변경예정 </span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// 길동 학생 : 재학생에서 졸업생으로 변경예정</span>
+</span></span></code></pre></div><h3 id=willset>willset</h3><p>willset은 메모리 변경(저장 속성 변경) 직전에 호출된다.
+따라서 파라미터로 받는 정보는 메모리 변경 전 기본 세팅 값 되시겠다.
+기본적으로 newValue 파라미터를 사용하며 생략 또한 가능하다.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span>        <span style=color:#66d9ef>willSet</span> {
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;</span><span style=color:#e6db74>\(</span>name<span style=color:#e6db74>)</span><span style=color:#e6db74> 학생 : </span><span style=color:#e6db74>\(</span>status<span style=color:#e6db74>)</span><span style=color:#e6db74>에서 </span><span style=color:#e6db74>\(</span>newValue<span style=color:#e6db74>)</span><span style=color:#e6db74>로 변경 예정&#34;</span>)
+</span></span><span style=display:flex><span>        }
+</span></span></code></pre></div><h3 id=didset>didSet</h3><p>didSet은 메모리 변경(저장 속성 변경) 직후에 호출된다.
+따라서 파라미터로 받는 정보 또한 메모리 변경 이후 값 되시겠다.
+기본적으로 oldValue 파라미터를 사용하며 생략 또한 가능하다.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span>        <span style=color:#66d9ef>didSet</span> {
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;</span><span style=color:#e6db74>\(</span>name<span style=color:#e6db74>)</span><span style=color:#e6db74> 학생 : </span><span style=color:#e6db74>\(</span>oldValue<span style=color:#e6db74>)</span><span style=color:#e6db74>에서 </span><span style=color:#e6db74>\(</span>status<span style=color:#e6db74>)</span><span style=color:#e6db74>로 변경 완료&#34;</span>)
+</span></span><span style=display:flex><span>        }
+</span></span></code></pre></div></div></article><hr><div class=post-info><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg><span class=tag><a href=https://elecbrandy.github.io/tags/swift/>swift</a></span></p><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>649 Words</p><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>0001-01-01 00:00</p></div><div class=pagination><div class=pagination__buttons><span class="button previous"><a href=https://elecbrandy.github.io/posts/1/01/%EC%83%9D%EC%84%B1%EC%9E%90/><span class=button__icon>←</span>
+<span class=button__text>생성자</span></a></span></div></div></main></div><footer class=footer><div class=footer__inner><div class=footer__content><span>&copy; 2023</span>
+<span><a href=https://elecbrandy.github.io/>Elecbrandy</a></span>
+<span><a href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank rel=noopener>CC BY-NC 4.0</a></span>
+<span><a href=https://elecbrandy.github.io/posts/index.xml target=_blank title=rss><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></span></div></div><div class=footer__inner><div class=footer__content><span>Powered by <a href=http://gohugo.io>Hugo</a></span></div></div></footer></div><script type=text/javascript src=https://elecbrandy.github.io/bundle.min.c90b8161416b87c69a8e02683b54ddd6edb90aea699648bf655e6cbc45b419b8e465d196e715772463dba35a6faf5decb2eb247480d38680484d54645b434570.js integrity="sha512-yQuBYUFrh8aajgJoO1Td1u25Cupplki/ZV5svEW0GbjkZdGW5xV3JGPbo1pvr13ssuskdIDThoBITVRkW0NFcA=="></script></body></html>
