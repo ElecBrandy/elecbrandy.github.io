@@ -4,7 +4,7 @@
 
 theme = "congo"
 
-# baseURL = "https://your_domain.com/"
+# baseURL = "https://elecbrandy.github.io/"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
@@ -13,3 +13,16 @@ summaryLength = 0
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+# config/_default/languages.en.toml
+
+title = "My awesome website"
+
+[author]
+name = "My name"
+image = "img/author.jpg"
+headline = "A generally awesome human"
+bio = "A little bit about me"
+links = [
+  { twitter = "https://twitter.com/username" }
+]
