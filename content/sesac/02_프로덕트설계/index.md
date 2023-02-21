@@ -1,8 +1,7 @@
 ---
 title: "프로덕트 설계"
-description: " "
-date: "July 11, 2023"
-categories: ["ProductDesign", "SwimNearMe"]
+date: "january 24, 2023"
+tags: ["러닝스푼즈", "서비스기획"]
 ---
 # 프로덕트 설계
 
