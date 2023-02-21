@@ -1,9 +1,10 @@
 ---
-title: "여러가지 속성"
+title: "저장속성"
 date: "january 24, 2023"
+description : "Property"
 tags: ["swift"]
 ---
-# Property
+# 저장속성 Property
 ## 1. 저장 속성
 메모리 공간을 가지고 값을 저장할 수 있는 속성.
 Class Cake의 저장속성은 `var name`, `var price` !
