@@ -7,7 +7,7 @@ title: "데이터 리터러시"
 # bookCollapseSection: false
 # bookComments: false
 # bookSearchExclude: false
-description: " "
+description: "This is a demo of adding content to the homepage."
 date: "July 11, 2023"
 categories: ["ProductDesign", "SwimNearMe"]
 ---

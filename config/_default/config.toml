@@ -16,13 +16,5 @@ summaryLength = 0
 
 # config/_default/languages.en.toml
 
-title = "My awesome website"
+title = "Elecbrandy.Archive"
 
-[author]
-name = "My name"
-image = "img/author.jpg"
-headline = "A generally awesome human"
-bio = "A little bit about me"
-links = [
-  { twitter = "https://twitter.com/username" }
-]

@@ -5,14 +5,14 @@ isoCode = "en"
 weight = 1
 rtl = false
 
-title = "Congo"
+title = " 🥃 / home / elecbrandy"
 # description = "My awesome website"
 # copyright = "Copy, _right?_ :thinking_face:"
 
 dateFormat = "2 January 2006"
 
 [params]
-  # mainSections = ["section1", "section2"]
+  #mainSections = ["section1"]
 
 [author]
   # name = "Your name here"
