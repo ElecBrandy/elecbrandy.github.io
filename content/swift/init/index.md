@@ -1,8 +1,8 @@
 ---
-title: "생성자"
-date: "january 24, 2023"
-description : "생성자에 대하여 알아봅시다"
+title: "[Swift] 생성자"
+date: "2023-01-01"
 tags: ["swift"]
+summary : "생성자는 매서드 생성자는 매서드 생성자는 매서드"
 ---
 ## Initiallizer 생성자
 매서드 중 클래스 안 저장 속성을 초기화하는 함수 **생성자**  

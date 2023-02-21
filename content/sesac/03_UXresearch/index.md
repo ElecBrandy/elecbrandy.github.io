@@ -1,7 +1,8 @@
 ---
-title: "UX리서치"
-date: "january 24, 2023"
+title: "[Sesac] UX리서치"
+date: "2023-02-21"
 tags: ["러닝스푼즈", "UX리서치"]
+summary : "현업에서의 워크플로우와 실습으로 알아보는 UX리서치"
 ---
 # UX리서치
 ## UX리서치에 대한 오해와 진실

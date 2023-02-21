@@ -9,10 +9,9 @@ title = " 🥃 / home / elecbrandy"
 # description = "My awesome website"
 # copyright = "Copy, _right?_ :thinking_face:"
 
-dateFormat = "2 January 2006"
-
 [params]
-  #mainSections = ["section1"]
+  mainSections = ["swift", "sesac"]
+  dateFormat = "2006-01-02"
 
 [author]
   # name = "Your name here"

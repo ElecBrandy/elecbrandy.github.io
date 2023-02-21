@@ -1,7 +1,8 @@
 ---
-title: "여러가지 속성"
-date: "january 24, 2023"
+title: "[Swift] 여러가지 속성"
+date: "2023-01-30"
 tags: ["swift"]
+summary : "이렇게 많은 속성들이...?"
 ---
 # Property
 ## 1. 저장 속성

@@ -1,15 +1,8 @@
 ---
-title: "ProfilePhoto"
-# weight: 1
-# bookFlatSection: false
-# bookToc: true
-# bookHidden: false
-# bookCollapseSection: false
-# bookComments: false
-# bookSearchExclude: false
-description: " "
-date: "July 11, 2023"
-categories: ["ProductDesign", "SwimNearMe"]
+title: "프로필 사진"
+date: "january 24, 2023"
+tags: ["서비스기획", "아이디어"]
+summary : "생각보다 높은 프로필 사진 촬영 비용... 지피지기 백전불태니 직접 해보기"
 ---
 # 프로필 사진
 요즘 프로필 사진 찍는게 유행 아닌 유행.  
