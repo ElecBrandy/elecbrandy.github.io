@@ -1,9 +1,7 @@
 ---
 title: "Elecbrandy.Archive"
 ---
-{{< lead >}}
-_The Archive at the End of the Github_
-{{< /lead >}}
+
 
 
 

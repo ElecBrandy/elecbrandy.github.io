@@ -1,0 +1,41 @@
+baseURL = "https://elecbrandy.github.io/"
+title = "ElecBrandy.Archive"
+theme = "etch"
+languageCode = "en-US"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  description = "The Archive at the End of the www"
+  copyright = "Copyright © 2023 elecbrandy"
+  dark = "auto"
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    url = "/about/"
+    weight = 20
+
+[permalinks]
+  posts = "/:title/"
+
+[markup.goldmark.renderer]
+  # Allow HTML in Markdown
+  unsafe = true
+
+[markup.tableOfContents]
+  endLevel = 3
+  ordered = true
+  startLevel = 2
+

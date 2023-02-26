@@ -5,3 +5,6 @@
 	path = themes/congo
 	url = https://github.com/jpanther/congo.git
 	branch = stable
+[submodule "themes/etch"]
+	path = themes/etch
+	url = https://github.com/LukasJoswiak/etch.git
