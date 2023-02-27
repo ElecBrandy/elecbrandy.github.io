@@ -283,10 +283,11 @@ footer#footer {
 }
 
 .wrapper {
-    height: 15vh;
+    height: 25vh;
     /*This part is important for centering*/
     display: grid;
     place-items: center;
+    text-align: center;
 }
   
 .typing-demo {
@@ -297,6 +298,7 @@ footer#footer {
     border-right: 3px solid;
     font-family: monospace;
     font-size: 1.0em;
+    color: #ffffff;
 }
   
 @keyframes typing {
@@ -309,4 +311,8 @@ footer#footer {
     50% {
       border-color: transparent
     }
+}
+
+.emoji {
+    font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
 }

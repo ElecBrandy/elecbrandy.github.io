@@ -1,4 +1,4 @@
-@media (min-width: 770px) {
+@media (min-width: 600px) {
 body {
     width: 600px;
     line-height: 1.5;
@@ -32,8 +32,8 @@ main#content header#post-header h1 {
 }
 
 main#content img {
-    max-width: 108%;
-    margin-left: -3.8%;
+    max-width: 100%;
+    margin-left: 0%;
 }
 
 main#content figure {
@@ -45,8 +45,8 @@ main#content figure img {
 }
 
 main#content pre {
-    width: 108%;
-    margin-left: -3.8%;
+    width: 100%;
+    margin-left: 0%;
     padding: 1.5rem 2.2rem;
 }
 }
