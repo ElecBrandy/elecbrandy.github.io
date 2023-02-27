@@ -1,5 +1,5 @@
 baseURL = "https://elecbrandy.github.io/"
-title = "ElecBrandy.Archive"
+title = "Elecbrandy"
 theme = "etch"
 languageCode = "en-US"
 enableInlineShortcodes = true
@@ -14,10 +14,10 @@ pygmentsUseClasses = true
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    url = "/"
+    identifier = "tags"
+    name = "tags"
+    title = "tags"
+    url = "/tags/"
     weight = 10
 
   [[menu.main]]

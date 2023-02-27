@@ -1,6 +1,13 @@
 <li>
     <a href="{{ .Permalink }}">
         {{ .Title }}
+        {{ if (eq .Section "tags")}}
+            <span class="post-count">({{ len .Pages }})</span>
+        {{ end }}
+        {{ if .IsPage }}
+            
+        {{ end }}
+        
         <small><time>{{ .Date | time.Format (i18n "posts.date") }}</time></small>
     </a>
 </li>

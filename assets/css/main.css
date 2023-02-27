@@ -22,12 +22,7 @@ header#banner {
     margin: 25px 0;
 }
 
-header#banner a href {
-    color: #313a3d;
-    text-decoration: none;
-}
-
-a {
+header#banner a {
     color: #313a3d;
     text-decoration: none;
 }
@@ -133,6 +128,7 @@ main#content ul#posts small {
 }
 
 main#content ul#posts li a {
+    color: #313a3d;
     text-decoration: none;
 }
 
@@ -286,5 +282,31 @@ footer#footer {
     margin: 40px 0;
 }
 
-
+.wrapper {
+    height: 15vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+}
   
+.typing-demo {
+    width: 40ch;
+    animation: typing 2s steps(30), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1.0em;
+}
+  
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+      
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
