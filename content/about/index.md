@@ -12,9 +12,6 @@ update...
 # Education
 <details> <summary> 숭실대학교 <small>| 정보사회학과 | Mar 2018 -  </small></summary> <div markdown="1"><small>
 💡 <b>정책분석 / 정책공모 / 정책PR / 토론</b><br>
-✔ 헌법 가치와 정신, 자유민주주의 원칙 아래 국민의 정치 참여 활성화/ 올바른 정치문화 정착 노력<br>
-✔ 정당 교육이 아닌, 당적을 떠나 누구나 참여하고 배울 수 있는, 다양성을 중시하는 시민 정치 교육<br>
-✔ 정치를 접할 수 있는 장벽을 허물고, 나아가 어디든 활동할 수 있는 청년 정치 생태계를 조성<br>
 </small></div></details>
 
 # Experience
