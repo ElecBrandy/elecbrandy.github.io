@@ -22,7 +22,7 @@ header#banner nav ul li a {
 }
 
 main#content a {
-    color: #00b1ed;
+    color: #ffffff;
 }
 
 
@@ -55,4 +55,8 @@ main#content header#post-header div {
 }
 {{- if not (eq .Site.Params.dark "on") -}}
 }
+
+
+
+
 {{- end -}}

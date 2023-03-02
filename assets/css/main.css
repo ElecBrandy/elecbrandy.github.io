@@ -60,7 +60,7 @@ header#banner nav ul li a {
 }
 
 main#content a {
-    color: #007dfa;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -282,6 +282,9 @@ footer#footer {
     margin: 40px 0;
 }
 
+
+/* ========== custom CSS ========== */
+
 .wrapper {
     height: 25vh;
     /*This part is important for centering*/
@@ -315,4 +318,14 @@ footer#footer {
 
 .emoji {
     font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+}
+
+/* my shortcode */
+.alert {
+    text-align: center;
+    padding : 8px;
+    width: auto;
+    height: 40px;
+    background-color : rgb(100, 40, 200);
+    border-radius: 8px 8px 8px 8px;
 }
