@@ -157,7 +157,7 @@ main#content header#post-header > div {
 
 main#content #toc {
     border: 1px solid #b1b1b1;
-    border-radius: 1px;
+    border-radius: 10px;
     line-height: 26px;
     margin: 16px 0;
     padding: 9px 14px;
