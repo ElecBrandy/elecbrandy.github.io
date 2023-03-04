@@ -23,6 +23,7 @@ header#banner nav ul li a {
 
 main#content a {
     color: #ffffff;
+    text-decoration: none;
 }
 
 
