@@ -12,6 +12,8 @@ pygmentsUseClasses = true
   dark = "auto"
   highlight = true
   mainSections = ["swift", "sesac"]
+  # Google Analytics 4 (gtag.js)
+  googleAnalytics = 'G-N4GL44S7JT'
 
 [menu]
   [[menu.main]]
@@ -39,4 +41,5 @@ pygmentsUseClasses = true
   endLevel = 3
   ordered = true
   startLevel = 2
+
 
