@@ -64,9 +64,22 @@ main#content a {
     text-decoration: none;
 }
 
+main#content div.alert a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 main#content a:hover {
     text-decoration: underline;
 }
+
+main#content div.alert a:hover {
+    color: #369aff;
+    text-decoration: none;
+}
+
+
+
 
 main#content h1,
 main#content h2,
@@ -284,6 +297,8 @@ footer#footer {
 
 
 /* ========== custom CSS ========== */
+
+
 
 .wrapper {
     height: 25vh;
