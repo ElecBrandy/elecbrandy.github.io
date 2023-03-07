@@ -14,7 +14,7 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 16px;
-    line-height: 1.6;
+    line-height: 1.9;
     overflow-wrap: break-word;
 }
 
@@ -111,7 +111,7 @@ main#content h6 + p {
 
 main#content p {
     color: #394548;
-    margin: 8px 0;
+    margin: 16px 0;
 }
 
 main#content hr {
