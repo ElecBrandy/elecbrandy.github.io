@@ -111,7 +111,7 @@ main#content h6 + p {
 
 main#content p {
     color: #394548;
-    margin: 16px 0;
+    margin: 8px 0;
 }
 
 main#content hr {
@@ -355,4 +355,9 @@ footer#footer {
     height: 40px;
     background-color : rgb(100, 40, 200);
     border-radius: 8px 8px 8px 8px;
+}
+
+
+img {
+    border-radius: 8px 8px 8px 8px; 
 }

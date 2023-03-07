@@ -12,6 +12,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+header#banner {
+    background: #121212;
+}
+
+
 header#banner a {
     color: #e0e0e0;
     text-decoration: none;
