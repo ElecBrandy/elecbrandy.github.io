@@ -20,6 +20,10 @@ body {
 
 header#banner {
     margin: 25px 0;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background: rgb(255, 255, 255);
 }
 
 header#banner a {
@@ -297,9 +301,6 @@ footer#footer {
 
 
 /* ========== custom CSS ========== */
-
-
-
 .wrapper {
     height: 25vh;
     /*This part is important for centering*/
@@ -315,7 +316,7 @@ footer#footer {
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
-    font-size: 1.5rem;
+    font-size: 2.4vmin;
     color: #ffffff;
 }
   
@@ -336,10 +337,20 @@ footer#footer {
 }
 
 /* my shortcode */
+
+@media (max-width: 600px) {
+    .alert{
+        display: none;
+    }
+}
+
 .alert {
-    font-size: 2.3vmin;
+    font-size: 1.5rem;
     text-align: center; 
-    padding : 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding : 8px 0;
     width: auto;
     height: 40px;
     background-color : rgb(100, 40, 200);
