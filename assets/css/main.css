@@ -112,6 +112,8 @@ main#content h6 + p {
 main#content p {
     color: #394548;
     margin: 16px 0;
+    line-height: 1.5;
+    letter-spacing: 0.5px
 }
 
 main#content hr {
@@ -134,14 +136,14 @@ main#content ul#posts {
 }
 
 main#content ul#posts li {
-    margin: 5px 0;
+    margin: 20px 0;
     padding: 0;
 }
 
 main#content ul#posts small {
     font-size: 0.8em;
     color: #767676;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 main#content ul#posts li a {
@@ -255,11 +257,10 @@ main#content figure figcaption p {
 
 main#content blockquote {
     font-style: italic;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 50px;
+    margin-top: 50px;
     padding-left: 15px;
-    border-left: 3px solid #ccc;
+    border-left: 5px solid rgb(100, 40, 200);
+    background-color: #d8d8d8;
 }
 
 main#content code,
@@ -357,7 +358,15 @@ footer#footer {
     border-radius: 8px 8px 8px 8px;
 }
 
-
 img {
     border-radius: 8px 8px 8px 8px; 
+}
+
+main#content ul#posts small time {
+    font-size: q,0em;
+    color: #ffffff;
+}
+
+main#content blockquote p{
+    padding: 5px;
 }

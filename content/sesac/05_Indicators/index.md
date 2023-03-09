@@ -4,6 +4,8 @@ date: "2023-02-21"
 tags: ["러닝스푼즈", "지표분석"]
 summary : " 스터디"
 ---
+[[index]] [Sesac] UX리서치
+
 {{< toc >}}
 ## 앱/웹 분석에서 주로 보는 지표 케이스
 ### AARRR
@@ -124,7 +126,7 @@ summary : " 스터디"
 
 
 
-
+<br>
 {{<alert>}}
 <a href="https://elecbrandy.github.io/tags/러닝스푼즈/">📖 러닝스푼즈X새싹 유니콘 기업 현직자에게 배우는 IT 서비스 기획자 취업캠프</a>
 {{</alert>}}

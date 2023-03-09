@@ -62,7 +62,10 @@ main#content header#post-header div {
 {{- if not (eq .Site.Params.dark "on") -}}
 }
 
-
-
+main#content blockquote {
+    margin: auto;
+    border-left: 5px solid rgb(100, 40, 200);
+    background-color: #3a256b;
+}
 
 {{- end -}}

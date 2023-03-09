@@ -11,7 +11,7 @@ pygmentsUseClasses = true
   copyright = "Copyright © 2023 elecbrandy"
   dark = "auto"
   highlight = true
-  mainSections = ["swift", "sesac", "book"]
+  mainSections = ["swift", "sesac", "social"]
   # Google Analytics 4 (gtag.js)
   googleAnalytics = 'G-N4GL44S7JT'
 

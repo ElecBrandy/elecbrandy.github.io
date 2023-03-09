@@ -14,7 +14,6 @@ draft: true
 </div>
 </details>
 
-   
 <br>
 {{<alert>}}
 <a href="https://elecbrandy.github.io">시리즈를 입력하세요</a>
