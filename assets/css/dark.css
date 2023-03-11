@@ -59,13 +59,11 @@ main#content ul#posts li a:hover {
 main#content header#post-header div {
     color: #a7a7a7;
 }
-{{- if not (eq .Site.Params.dark "on") -}}
-}
-
 main#content blockquote {
     margin: auto;
     border-left: 5px solid rgb(100, 40, 200);
     background-color: #3a256b;
 }
-
+{{- if not (eq .Site.Params.dark "on") -}}
+}
 {{- end -}}
