@@ -272,9 +272,11 @@ main#content pre {
 }
 
 main#content code {
+    color: #ffffff;
     font-size: 0.96em;
+    border-radius: 5px;
     padding: 0 5px;
-    background-color: #dfdfdf;
+    background-color: #272822;
 }
 
 main#content pre {
@@ -303,7 +305,6 @@ footer#footer {
     color: #b3b3b3;
     margin: 40px 0;
 }
-
 
 /* ========== custom CSS ========== */
 .wrapper {

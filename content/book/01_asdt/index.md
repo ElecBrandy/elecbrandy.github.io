@@ -5,7 +5,7 @@ tags: ["독서"]
 summary : "특히, 맥주를 마시면 그러니까 좋은 결과가 있을 수 없었다."
 ---
 #### 망할놈의 나라 압수르디스탄 | 게리 슈타인카르트 | 민음사
-![NO IMAGE!](https://pixabay.com/get/g3abe9eb992e81cff67586fd3f3932c70537de5eb84d0cd29bba61f597cdf0d072441094c987efa73c4f4a1e58f4ce85f3e5ebb83a7e687731f81d2efbc60fe7f0c07f6e57e4839a76c7c2e4d5d670b9c_1920.jpg)
+![NO IMAGE!](https://cdn.pixabay.com/photo/2014/02/17/10/20/statue-of-liberty-267948_1280.jpg)
 <small><center>Image by <a href="https://pixabay.com/users/ronile-126846/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=267948">Ronile</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=267948">Pixabay</a></center></small>
 > 특히, 맥주를 마시면 그러니까 좋은 결과가 있을 수 없었다.  
 
